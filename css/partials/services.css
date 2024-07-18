@@ -1,0 +1,134 @@
+.services {
+  padding-left:    var(--padding-left-right);
+  padding-right:   var(--padding-left-right);
+  max-width:       calc(824px + 2*(var(--padding-left-right)));
+  display:         flex;
+  flex-flow:       column nowrap;
+  gap:             2rem;
+  align-items:     center;
+  justify-content: flex-start;
+}
+
+  .services-headline {
+    padding-top:     2rem;
+    width:           clamp(15.6rem, 100%, 23.75rem);
+  }
+
+    .services-headline > h1 {
+      margin-bottom: 1.3rem;
+    }
+
+
+  .services--wrapper {
+    display:     flex;
+    flex-flow:   row wrap;
+    justify-content: center;
+    max-width:   824px;
+    gap:         4rem;
+    
+  }
+
+    .services-card {
+      display:       flex;
+      flex-flow:     column nowrap;
+      border:        .0625rem solid var(--primary-color);
+      border-radius: .5rem;
+      padding:       var(--card-padding);
+      width:         clamp(15.6rem, 100%, 23.75rem);
+    }
+
+      .max-height {
+        height: 100%;
+      }
+
+      .card-title {
+        border-bottom: .0625rem solid var(--secondary-color);
+        padding-bottom: var(--card-padding);
+        font-size: calc(var(--font-size-regular) * 1.4);
+        line-height: calc(var(--font-size-regular) * 1.4);
+        text-align:     center;
+        width:         100%;
+      }
+
+      .card-text {
+        padding-top: var(--card-padding);
+        padding-bottom: var(--card-padding);
+      }
+
+      /*aligning the bullet points to the text above*/
+
+        .card-list li {
+          list-style-position: inside;
+          display:             flex;
+          align-items:         flex-start;
+        }
+
+        .card-list {
+          padding-top:  .5rem;
+          padding-left: 0;
+        }
+
+        .card-list li:before {
+          content:      "•"; 
+          margin-right: 0.5rem; /* A bullet point távolsága a szövegtől */
+          font-size:    1rem;
+        }
+
+      .card-price {
+        padding-top: var(--card-padding);
+        border-top:  .0625rem solid var(--secondary-color);
+        text-align:  center;
+        font-size: calc(var(--font-size-regular) * 1.4);
+        line-height: calc(var(--font-size-regular) * 1.4);
+        font-weight: 600;
+      }
+
+
+
+
+   .cta__services {
+    padding-top:   2rem;
+    padding-left:  0;
+    padding-right: 0;
+    width:         clamp(15.6rem, 100%, 23.75rem);
+   }
+
+@media (min-width: 380px) {
+  :root {
+    --card-padding: 1.5625rem; 
+  }
+  
+}
+
+@media (min-width: 627px) {
+  .cta__services > .cta--wrapper {
+   width: unset;
+  }
+  .services {
+    gap: 4rem;
+  }
+  .services-headline {
+    padding-top: 4rem;
+  }
+}
+
+@media (min-width: 937px) {
+  .services-headline {
+    align-self: flex-start;
+    width:         clamp(15.6rem, 100%, 38.875rem);
+  }
+  .cta__services {
+    align-self: flex-start;
+    width:         clamp(15.6rem, 100%, 38.875rem);
+  }
+}
+
+
+
+
+    
+
+   
+ 
+
+     

@@ -1,0 +1,2031 @@
+/*!*****************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./public/css/partials/normalize.css ***!
+  \*****************************************************************************************************************/
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+ html {
+    line-height: 1.15; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+  }
+  
+  /* Sections
+     ========================================================================== */
+  
+  /**
+   * Remove the margin in all browsers.
+   */
+  
+  body {
+    margin: 0;
+  }
+  
+  /**
+   * Render the `main` element consistently in IE.
+   */
+  
+  main {
+    display: block;
+  }
+  
+  /**
+   * Correct the font size and margin on `h1` elements within `section` and
+   * `article` contexts in Chrome, Firefox, and Safari.
+   */
+  
+  h1 {
+    font-size: 2em;
+    margin:    0;
+  }
+  
+  /* Grouping content
+     ========================================================================== */
+  
+  /**
+   * 1. Add the correct box sizing in Firefox.
+   * 2. Show the overflow in Edge and IE.
+   */
+  
+  hr {
+    box-sizing: content-box; /* 1 */
+    height: 0; /* 1 */
+    overflow: visible; /* 2 */
+  }
+  
+  /**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+  
+  pre {
+    font-family: monospace, monospace; /* 1 */
+    font-size: 1em; /* 2 */
+  }
+  
+  /* Text-level semantics
+     ========================================================================== */
+  
+  /**
+   * Remove the gray background on active links in IE 10.
+   */
+  
+  a {
+    background-color: transparent;
+  }
+  
+  /**
+   * 1. Remove the bottom border in Chrome 57-
+   * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+   */
+  
+  abbr[title] {
+    border-bottom: none; /* 1 */
+    text-decoration: underline; /* 2 */
+    text-decoration: underline dotted; /* 2 */
+  }
+  
+  /**
+   * Add the correct font weight in Chrome, Edge, and Safari.
+   */
+  
+  b,
+  strong {
+    font-weight: bolder;
+  }
+  
+  /**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+  
+  code,
+  kbd,
+  samp {
+    font-family: monospace, monospace; /* 1 */
+    font-size: 1em; /* 2 */
+  }
+  
+  /**
+   * Add the correct font size in all browsers.
+   */
+  
+  small {
+    font-size: 80%;
+  }
+  
+  /**
+   * Prevent `sub` and `sup` elements from affecting the line height in
+   * all browsers.
+   */
+  
+  sub,
+  sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+  }
+  
+  sub {
+    bottom: -0.25em;
+  }
+  
+  sup {
+    top: -0.5em;
+  }
+  
+  /* Embedded content
+     ========================================================================== */
+  
+  /**
+   * Remove the border on images inside links in IE 10.
+   */
+  
+  img {
+    border-style: none;
+  }
+  
+  /* Forms
+     ========================================================================== */
+  
+  /**
+   * 1. Change the font styles in all browsers.
+   * 2. Remove the margin in Firefox and Safari.
+   */
+  
+  button,
+  input,
+  optgroup,
+  select,
+  textarea {
+    font-family: inherit; /* 1 */
+    font-size: 100%; /* 1 */
+    line-height: 1.15; /* 1 */
+    margin: 0; /* 2 */
+  }
+  
+  /**
+   * Show the overflow in IE.
+   * 1. Show the overflow in Edge.
+   */
+  
+  button,
+  input { /* 1 */
+    overflow: visible;
+  }
+  
+  /**
+   * Remove the inheritance of text transform in Edge, Firefox, and IE.
+   * 1. Remove the inheritance of text transform in Firefox.
+   */
+  
+  button,
+  select { /* 1 */
+    text-transform: none;
+  }
+  
+  /**
+   * Correct the inability to style clickable types in iOS and Safari.
+   */
+  
+  button,
+  [type="button"],
+  [type="reset"],
+  [type="submit"] {
+    -webkit-appearance: button;
+  }
+  
+  /**
+   * Remove the inner border and padding in Firefox.
+   */
+  
+  button::-moz-focus-inner,
+  [type="button"]::-moz-focus-inner,
+  [type="reset"]::-moz-focus-inner,
+  [type="submit"]::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+  }
+  
+  /**
+   * Restore the focus styles unset by the previous rule.
+   */
+  
+  button:-moz-focusring,
+  [type="button"]:-moz-focusring,
+  [type="reset"]:-moz-focusring,
+  [type="submit"]:-moz-focusring {
+    outline: 1px dotted ButtonText;
+  }
+  
+  /**
+   * Correct the padding in Firefox.
+   */
+  
+  fieldset {
+    padding: 0.35em 0.75em 0.625em;
+  }
+  
+  /**
+   * 1. Correct the text wrapping in Edge and IE.
+   * 2. Correct the color inheritance from `fieldset` elements in IE.
+   * 3. Remove the padding so developers are not caught out when they zero out
+   *    `fieldset` elements in all browsers.
+   */
+  
+  legend {
+    box-sizing: border-box; /* 1 */
+    color: inherit; /* 2 */
+    display: table; /* 1 */
+    max-width: 100%; /* 1 */
+    padding: 0; /* 3 */
+    white-space: normal; /* 1 */
+  }
+  
+  /**
+   * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+   */
+  
+  progress {
+    vertical-align: baseline;
+  }
+  
+  /**
+   * Remove the default vertical scrollbar in IE 10+.
+   */
+  
+  textarea {
+    overflow: auto;
+  }
+  
+  /**
+   * 1. Add the correct box sizing in IE 10.
+   * 2. Remove the padding in IE 10.
+   */
+  
+  [type="checkbox"],
+  [type="radio"] {
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
+  }
+  
+  /**
+   * Correct the cursor style of increment and decrement buttons in Chrome.
+   */
+  
+  [type="number"]::-webkit-inner-spin-button,
+  [type="number"]::-webkit-outer-spin-button {
+    height: auto;
+  }
+  
+  /**
+   * 1. Correct the odd appearance in Chrome and Safari.
+   * 2. Correct the outline style in Safari.
+   */
+  
+  [type="search"] {
+    -webkit-appearance: textfield; /* 1 */
+    outline-offset: -2px; /* 2 */
+  }
+  
+  /**
+   * Remove the inner padding in Chrome and Safari on macOS.
+   */
+  
+  [type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+  }
+  
+  /**
+   * 1. Correct the inability to style clickable types in iOS and Safari.
+   * 2. Change font properties to `inherit` in Safari.
+   */
+  
+  ::-webkit-file-upload-button {
+    -webkit-appearance: button; /* 1 */
+    font: inherit; /* 2 */
+  }
+  
+  /* Interactive
+     ========================================================================== */
+  
+  /*
+   * Add the correct display in Edge, IE 10+, and Firefox.
+   */
+  
+  details {
+    display: block;
+  }
+  
+  /*
+   * Add the correct display in all browsers.
+   */
+  
+  summary {
+    display: list-item;
+  }
+  
+  /* Misc
+     ========================================================================== */
+  
+  /**
+   * Add the correct display in IE 10+.
+   */
+  
+  template {
+    display: none;
+  }
+  
+  /**
+   * Add the correct display in IE 10.
+   */
+  
+  [hidden] {
+    display: none;
+  }
+/*!************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./public/css/partials/base.css ***!
+  \************************************************************************************************************/
+/*-----------------------------------*\
+* BASIC SETTINGS OF THE PAGE
+\*-----------------------------------*/
+
+:root {
+    --primary-color:        #47383B; /* text color */
+    --primary-color-rgb:    71, 56, 59;
+    --secondary-color:      #E0C3A2; /* complementary color */
+    --secondary-color-rgb:  244, 195, 162;
+    --brand-color:          #5F7E92; 
+    --brand-color-rgb:      95, 126, 146;
+   /* --brand-color:          #465A6D;*/
+    --background-color:     #FFFFFF; /* white*/
+    --background-color-rgb: 255, 255, 255;
+    --font-size-regular:    clamp(1rem, 1vw + .5rem, 1.125rem);
+    --line-height-regular:  calc(var(--font-size-regular) * 1.5);
+    --font-size-title:      clamp(1.6875rem, 2vw + 1rem, 2.1875rem);
+    --hero-title:           clamp(1.6875rem, 2vw + 1rem, 2.8125rem);
+    --font-size-small:      0.875rem;
+    --line-height-small:    1.2rem;
+    --header-height:        clamp(3.5rem, 5vw + 2rem, 6rem);
+    --hero-height:          calc(100dvh - var(--header-height)); 
+    --padding-left-right:   6%; 
+    --card-padding:         1.25rem;
+    --footer-height:        auto; 
+} 
+
+/* normalize CSS */
+
+* {
+    margin:     0;
+    padding:    0;
+    box-sizing: border-box;
+}
+
+  
+  html, body {
+    width:      100%;
+    overflow-x: hidden;
+  }
+
+
+   body {
+    background-color: var(--background-color);
+   }
+
+/*** TYPOGRAPHY ***/
+
+html {
+  font-size:        16px;
+  color:            var(--primary-color);
+}
+
+  
+  body {
+    width:       100vw;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    text-align:  left;
+    font-size:   var(--font-size-regular);
+    line-height: var(--line-height-regular);
+  }
+
+
+    a {
+      text-decoration: none;
+    }
+
+/*Title*/
+
+    .title {
+      font-family:   'Montserrat', sans-serif;
+      font-weight:    600;
+      font-size:      var(--font-size-title);
+      line-height:    calc(var(--font-size-title) * 1.2);
+      margin:         0;
+      /*margin-bottom:  .5rem;*/
+    }
+     
+      
+      .title__hero {
+        font-family:    'Montserrat', sans-serif;
+        font-weight:    600;
+        font-size:      var(--hero-title);
+        line-height:    calc(var(--hero-title) * 1.2);
+        margin-bottom:  1rem;
+      }
+
+      
+
+
+    
+
+    
+
+    
+/*Text*/
+
+    
+
+
+    .text__center {
+      text-align:  center;
+    }
+
+    
+    .text__small {
+      font-size:   var(--font-size-small);
+      line-height: var(--line-height-small);
+    }
+
+    .text__logo {
+      font-family:    'Montserrat', sans-serif;
+      /*font-size:   clamp(1.5rem, 1.5vw + 1rem, 2rem);*/
+      line-height: var(--header-height);
+      color:       var(--brand-color);
+    }
+
+    .text__nav {
+      font-family:    'Montserrat', sans-serif;
+      font-size:      var(--font-size-small);
+      line-height:    var(--line-height-small);
+      color:          var(--brand-color);
+      font-weight:    500;
+    }
+
+    .text__brand {
+      color: var(--brand-color);
+    }
+     
+
+    .text__bold {
+      font-weight: 600;
+    }
+
+    .text__uppercase {
+      text-transform: uppercase;
+    }
+
+   
+
+@media (min-width: 1920px) {
+  .text__nav {
+    font-size:     1rem;
+  }
+  .text__hero {
+    font-size:     1.5rem;
+  }
+} 
+   
+
+  
+
+
+/*!**************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./public/css/partials/layout.css ***!
+  \**************************************************************************************************************/
+/*--------------------------------*\
+* LAYOUT 
+
+*Container............overall layout of the page
+*
+*Main.................over layout of the content
+*
+\*--------------------------------*/
+
+
+/*--------------------------------*\
+* OVERALL LAYOUT OF THE PAGE
+\*--------------------------------*/
+
+.container {
+    display:        flex;
+    flex-flow:      column nowrap;
+    align-items:    center;
+    min-height:     100vh;
+    width:          100%;
+    position:       relative;
+}
+  
+  
+  
+  
+  
+  /*--------------------------------*\
+  * CONTENT LAYOUT
+  \*--------------------------------*/
+
+  main {
+    display:         flex;
+    flex-flow:       column nowrap;      
+    justify-content: flex-start;
+    align-items:     center;
+    flex-grow:       1;
+    width:           100%;
+    margin-top:      var(--header-height);
+    gap:             4rem;
+    
+  }
+
+  
+
+
+@media (min-width: 956px) {
+  main {
+    gap: 5rem;
+  }
+  .homepage {
+    gap: 10rem;
+  }
+}
+ 
+  
+
+ 
+/*!***************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./public/css/partials/buttons.css ***!
+  \***************************************************************************************************************/
+.btn {
+      
+    display:        inline-block;
+    width:          max(100%, 11.6436rem);
+    border:         0.125rem solid;
+    border-radius:  .5rem;
+    opacity:        1;
+    padding:        .5rem;
+    font-size:      var(--font-size-small);
+    line-height:    var(--line-height-small);
+    font-weight:    600;
+    text-align:     center;
+    text-transform: uppercase;
+    align-self:     center;
+    
+  }
+  
+  .btn:hover {
+    transition:       0.3s;
+  }
+  
+    .btn__primary {
+      background:   var(--brand-color) 0% 0% no-repeat padding-box;
+      border-color: var(--brand-color);
+      color:        var(--background-color);
+    }
+
+    .btn__primary:hover {
+      background:   transparent;
+      border-color: var(--brand-color);
+      color:        var(--brand-color);
+    }
+
+    .btn__hollow {
+      background:   transparent;
+      border-color: var(--brand-color);
+      color:        var(--brand-color);
+    }
+
+    .btn__hollow:hover {
+      background:   var(--brand-color);
+      border-color: var(--brand-color);
+      color:        var(--background-color);
+    }
+
+    .btn__primary__hero {
+      background:   var(--brand-color) 0% 0% no-repeat padding-box;
+      border-color: var(--brand-color);
+      color:        var(--background-color);
+      border:       1px solid;
+    }
+
+    .btn__primary__hero:hover {
+      background:   transparent;
+      border-color: var(--brand-color);
+      color:        var(--brand-color);
+    
+    }
+
+    .btn__hollow__hero {
+      background:   transparent;
+      border-color: var(--primary-color);
+      color:        var(--primary-color);
+      border:       1px solid var(--primary-color);
+      font-weight:  400;
+    }
+
+    .btn__hollow__hero:hover {
+      background:   var(--brand-color);
+      border-color: var(--brand-color);
+      color:        var(--background-color);
+    }
+
+
+    .btn--wrapper {
+      display:         flex;
+      flex-flow:       column nowrap;
+      justify-content: flex-start;
+      width:           100%;
+      gap:             1rem; /*1.4rem volt*/
+      margin-top:      1rem;
+      margin-bottom:   1.1875rem;
+      margin-bottom:   0;
+      z-index:         2;
+    }
+
+ 
+/*@media (min-width: 435px) {
+  .btn {
+    max-width:    15rem;
+  }
+  .btn__primary__hero, .btn__hollow__hero {
+    max-width: unset;
+  }
+}*/
+@media (min-width: 568px) {
+  .btn--wrapper {
+    flex-flow:       row nowrap;
+   /* gap:             1rem;*/
+  }
+  .btn {
+    max-width:    15rem;
+  }
+  .btn__primary__hero, .btn__hollow__hero {
+    max-width: unset;
+  }
+}
+
+@media (min-width: 768px) {
+  .btn--wrapper {
+    margin-bottom: 1.75rem;
+    margin-bottom: 4rem;
+  }
+}
+@media (min-width: 986px) {
+  .btn--wrapper {
+    margin-top: 2rem;
+  }
+  .btn {
+    width: auto;
+  }
+  .btn__feature {
+    width:  11.78rem;
+    padding-left:  2rem;
+    padding-right: 2rem;
+  }
+}
+@media (min-width: 1200px) {
+  .btn {
+   /* font-size: 1rem;*/
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+
+
+
+    /* On tablet and mobile there is no hover effect */
+
+    /*@media (max-width: 923px) {
+      .btn__primary:hover {
+        background:   var(--brand-color) 0% 0% no-repeat padding-box;
+        border-color: var(--brand-color);
+        color:        var(--secondary-color);
+      } 
+      .btn__hollow:hover {
+        background:   transparent;
+        border-color: var(--secondary-color);
+        color:        var(--secondary-color); 
+      }
+    }
+  */
+    
+
+/*!**************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./public/css/partials/header.css ***!
+  \**************************************************************************************************************/
+/*
+*Sticky Header........main layout, max-width, padding, and position
+*
+*Navbar..... .........sandvich menu, 
+*Desktop version......sandvich menu hidden, underline shown on hover
+*/
+
+/*Sticky header*/
+
+header {
+  width:            100vw;
+  height:           var(--header-height);
+  background:       var(--background-color);
+  border-bottom:    2px solid var(--secondary-color);
+  display:          flex;
+  flex-flow:        row nowrap;
+  justify-content:  center;
+  align-items:      flex-start;
+  position:         fixed;
+  z-index:          100;
+}
+
+  .header--wrapper {
+    width:            min(100%, 1920px);
+    display:          flex;
+    flex-flow:        row nowrap;
+    justify-content:  space-between;  
+    align-items:      center;
+    opacity:          1;
+    padding-left:     5%;
+    padding-right:    5%;
+   
+  }
+
+  
+  /* Navbar */
+ 
+  .js-nav--wrapper {
+  display:  flex;
+  width:    100%;
+  position: fixed;
+  top:       var(--header-height);
+  left:      0;
+}
+
+  .js-nav--wrapper > * {
+    width: 100%;
+  }
+    .nav {
+      max-height:       0;
+      display:          flex;
+      width:            100%;
+      gap:              0;
+      margin-left:      0; 
+      flex-flow:        column nowrap;
+      justify-content:  flex-start;
+      align-items:      center;
+      overflow:         hidden;
+      transition:       max-height 0.5s ease-out;
+      background-color: var(--background-color);
+    }
+    
+      .js-nav--wrapper.js-is-open .nav {
+        max-height: 100%;
+      }
+    
+        .nav > * { 
+          border-bottom:   1px solid var(--secondary-color); 
+          padding-top:     1px;
+          width:           100%;
+          height:          2rem;
+          z-index:         100;
+          display:         flex;
+          justify-content: center;
+          align-items:     center;
+         
+        }
+
+    
+      
+    .js-nav--menu {
+      display:      block;
+      color:        var(--brand-color);
+    }
+    
+    /*Active link is highlighted*/
+    
+    .js-nav--item__active {
+      color:     var(--secondary-color);
+      
+    }
+
+
+
+    /*--------------------------------*/
+    /*DESKTOP LAYOUT*/
+    /*--------------------------------*/
+    /*
+    1) border-bottom is hidden otherwise
+    */
+
+    @media (min-width: 1200px) {
+      .js-nav--wrapper {
+        display: flex;
+        width:   80%;
+        height:  calc(var(--header-height) - 5px); /* [1] */
+        position: unset;
+        background-color: transparent;
+      }
+  
+      .js-nav--wrapper > * {
+        width: 100%;
+        
+      }  
+    .nav {
+      width:           100%;
+      display:         flex;
+      max-height:      100%;
+      flex-flow:       row nowrap;
+      justify-content: space-between;
+      align-items:     center;
+      gap:             .5rem;
+    }
+
+      .nav > * {
+        border-bottom: none;
+      }
+    
+      .js-nav--item, .js-nav--item__logo {
+         
+        display:         flex;
+        justify-content: center;
+        align-items:     center;
+        padding:         0;
+        height:          var(--header-height);
+      }
+    
+        .js-nav--item:hover, .js-nav--item__logo:hover, .js-nav--menu:hover {
+          color:           var(--primary-color);
+          transition:       0.3s;
+        }
+  
+  
+    /*Sandvich menu is not shown on desktop */
+    
+    .js-nav--menu {
+      display:         none;
+      color:           var(--brand-color);
+      
+         
+    }
+  }
+    
+
+
+    
+/*!************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./public/css/partials/hero.css ***!
+  \************************************************************************************************************/
+/*********************************************************************\
+HERO SECTION
+\********************************************************************/
+/*
+*Hero background and color.................mobile view
+*
+*Hero layout and background changes........for bigger screens
+*/
+
+
+/* Hero background and color */
+
+.hero {
+    width:              100%;
+    max-width:          1920px;
+    display:            flex;
+    flex-flow:          column nowrap;
+    justify-content:    flex-start;
+    align-items:        center;
+    height:             var(--hero-height);
+    gap:                .5rem;
+  } 
+  
+  
+   
+  .hero-image {
+    width:         100%;
+    height:        100%;
+    height: 50%;
+    background:  url('/images/photos/mobile-smartphone-hero.jpg') no-repeat left center / cover;
+    background:  url('/images/photos/mobile-smartphone-hero.webp') no-repeat left center / cover;
+  }
+
+  .hero-title, .hero-text, .hero-buttons {
+    width:           100%;
+    padding-left:    var(--padding-left-right);
+    padding-right:   var(--padding-left-right);
+  }
+
+  .hero-title {
+    /*margin-top: auto;*/
+  }
+
+  .hero-buttons {
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  
+   @media (min-height: 600px) {
+    .hero-title {
+      margin-top: auto;
+      
+    }
+    .hero-buttons {
+      margin-top: auto;
+      margin-bottom: .5rem;
+    }
+   }
+ 
+  @media (min-width: 768px) {
+    .hero-image {
+      height: 50%;
+      background: url('/images/photos/tablet-smartphone-hero.jpg') no-repeat left center / cover;
+      background: url('/images/photos/tablet-smartphone-hero.webp') no-repeat left center / cover;
+    }
+    .hero-title {
+      font-size: 2.5rem;
+      line-height: calc(2.5rem * 1.5);
+      width: 80%;
+      align-self: flex-start;
+      margin-top: auto;
+    }
+    .hero-text {
+      width: 70%;
+      align-self: flex-start;
+    }
+    .hero-buttons {
+      margin-top: auto;
+      margin-bottom:auto;
+    }
+  }
+  @media (min-width: 1200px) {
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto;
+      grid-template-areas:
+      "title img"
+      "text buttons";
+      place-items: start;
+      row-gap: 10rem;
+      
+    }
+    .hero-image {
+      grid-area: img;
+      background: url('/images/photos/smartphone-hero.jpg') no-repeat left center / cover;
+      background: url('/images/photos/smartphone-hero.webp') no-repeat left center / cover;
+      z-index: 1;
+      height: 45.7vh;
+    }
+    .hero-title {
+      grid-area: title;
+      font-size: 5rem;
+      line-height: calc(5rem * 1.5);
+      place-self: end start;
+      width: 140%;
+      padding-left: 15%;
+      z-index: 2;
+      margin: 0;
+      
+    }
+    
+    .hero-text {
+      grid-area: text;
+      width: 75%;
+      padding-left: 15%;
+      
+    }
+    .hero-buttons {
+      grid-area: buttons;
+      margin:    0;
+      
+      
+    }
+   
+  }
+
+ @media (min-width: 1333px) {
+    .hero-title {
+      width: 130%;
+    }
+  }
+
+ 
+
+ @media (min-width: 1456px) {
+    .hero-title {
+      width: 120%;
+    }
+  }
+
+@media (min-width: 1603px) {
+    .hero-title {
+      width: 110%;
+      position: relative;
+      left: 25%;
+    }
+    .hero-text {
+      position: relative;
+      left: 25%;
+    }
+  }
+  @media (min-width: 1783px) {
+    .hero-title {
+      width: 100%;
+      
+    }
+  }
+
+ @media (min-width: 1668px) and (max-height: 953px) {
+  .hero-image {
+    height: 100%;
+  }
+  .hero-title {
+    top: 5%;
+  }
+ }
+/*!***************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./public/css/partials/feature.css ***!
+  \***************************************************************************************************************/
+.feature {
+  width:           100%;
+  max-width:       1440px;
+  padding-left:    var(--padding-left-right);
+  padding-right:   var(--padding-left-right);
+  display:         flex;
+  flex-flow:       column nowrap;
+  align-items:     center;
+  justify-content: flex-start;
+  gap:             4rem;
+  
+}
+
+  article {
+    display:         flex;
+    flex-flow:       column nowrap;
+    align-items:     flex-start;
+    justify-content: flex-start;
+    gap:             1.5rem;
+    
+  }
+
+    .feature--wrapper {
+      display:         flex;
+      flex-flow:       column nowrap;
+      align-items:     center;
+      justify-content: flex-start;
+      gap:             1rem;
+      
+      
+    }
+
+      .feature-content {
+        display:         flex;
+        flex-flow:       column nowrap;
+        align-items:     center;
+        justify-content: flex-start;
+        gap:             1rem;
+        
+      }
+
+      .feature-image {
+        width:          100%;
+        border-radius:  .5rem;
+        aspect-ratio:   279/228;
+        object-fit:     cover;
+                 
+      }
+
+@media (min-width: 744px) {
+  .feature--wrapper {
+    flex-flow: row nowrap;
+    align-items: flex-start;
+  }
+  .feature-content > .btn {
+    align-self: flex-start;
+    margin-top: 2rem;
+  }
+  .feature-image {
+    width:    37%;
+    aspect-ratio: 276/259; 
+    
+  }
+  .article-title {
+    width:   76.4%;
+  }
+ 
+}
+
+@media (min-width:1200px) {
+ .feature {
+    gap: 10rem;
+  }
+  
+  .reverse {
+    flex-flow: row-reverse nowrap;
+   
+  }
+  .feature-image {
+    width: 50%;
+    aspect-ratio: unset;
+    align-self: stretch;
+  }
+  .article-title {
+    width: calc(50% - 1.6rem);
+  }
+ 
+  .feature--wrapper {
+   
+    align-items:  stretch;
+    gap:          2rem;
+  }
+  
+  .feature-content > p:last-of-type {
+    margin-bottom: 2rem;
+   
+  }
+  .feature-content > .btn {
+    margin-top: auto;
+  }
+}
+/*!********************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./public/css/partials/testimonials.css ***!
+  \********************************************************************************************************************/
+.testimonials {
+  width:          100vw;
+  max-width:      1440px;
+  padding-left:   var(--padding-left-right);
+  padding-right:  var(--padding-left-right);
+  display:        flex;
+  flex-flow:      column nowrap;
+  align-items:    center;
+  justify-content: center;
+  gap:             1rem;
+ 
+}
+
+
+
+/*ARROWS*/
+
+.arrow--wrapper {
+  display: none;
+}
+
+
+
+
+
+/*TESTIMONIALS WRAPPER & CONTENT*/
+
+.testimonials-slider {
+  width:           100%;
+  display:         flex;
+  align-items:     center;
+  justify-content: space-between;
+}
+
+.testimonials--wrapper {
+  display:    flex;
+  overflow:   hidden;
+  z-index:    -1;
+}
+
+
+  .testimonials-content {
+    flex:            0 0 100%;  
+    text-align:      center;
+    display:         flex;
+    flex-flow:       column nowrap;
+    justify-content: flex-start;
+    align-items:     center;
+    gap:             1.25rem;
+    transition:      transform 0.5s ease;
+    
+            
+  }
+
+    
+
+  
+  .js-transform {
+    transform: translateX(-100%); /* A vízszintes elmozdulás animálásának megoldása */
+  }
+
+.testimonials-content h2 {
+  font-size:     var(--font-size-regular);
+  line-height:   var(--line-height-regular);
+  
+}
+
+  
+
+    
+
+  .testimonials-image {
+    width:          4.25rem;
+    height:         4.25rem;
+    border-radius:  50%;
+    object-fit:     cover;
+  }
+
+
+/*SMALL DOTS*/
+.dots--wrapper {
+  display:         flex;
+  flex-flow:       row nowrap;
+  align-items:     center;
+  justify-content: center;
+  gap:             .625rem;
+  
+}
+.js-dot {
+  width:            .625rem;
+  height:           .625rem;
+  border-radius:    50%;
+  background-color: var(--secondary-color);
+}
+
+.js-dot__active {
+  background-color: var(--primary-color);
+}
+
+
+
+@media (min-width:744px) {
+
+  .testimonials--wrapper {
+    width:          80%;
+    max-width:      731px;
+  }
+
+  
+  .arrow--wrapper {
+    width:           4.25rem;
+    height:          4.25rem;
+    border-radius:   50%;
+    border:          2px solid var(--secondary-color);
+    background:      var(--background-color); 
+    display:         flex;
+    align-items:     center;
+    justify-content: center;
+    color:           var(--secondary-color);
+    
+  }
+  
+    .arrow {
+      stroke:       var(--secondary-color);
+      stroke-width: 2; /* Nyíl vastagsága */
+      fill:         none;
+    }
+  
+  .arrow--wrapper:hover {
+    border-color: var(--primary-color); /* Border színének változása hover hatásra */
+    transition:   border-color 0.3s ease;
+  }
+  
+    .arrow--wrapper:hover .arrow {
+      stroke:     var(--primary-color); /* Színváltás hover hatásra */
+      transition: stroke 0.3s ease;
+  
+    }
+}
+
+@media (min-width:1000px) {
+  .testimonials-image {
+    width:          6.25rem;
+    height:         6.25rem;
+  }
+}
+/*!***********************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./public/css/partials/cta.css ***!
+  \***********************************************************************************************************/
+.cta {
+  width:           100%;
+  max-width:      1440px;
+  padding-left:    var(--padding-left-right);
+  padding-right:   var(--padding-left-right);
+  padding-bottom:  3rem;
+  
+  
+}
+
+  .cta--wrapper {
+    width:           100%;
+    max-width:       622px;
+    display:         flex;
+    flex-flow:       column nowrap;
+    align-items:     flex-start;
+    justify-content: flex-start;
+    gap:             1rem;
+  }
+
+    
+     
+
+
+.cta-arrow-svg .arrow {
+    stroke: var(--brand-color);
+    stroke-width: 3;
+  }
+  
+.cta-link:hover {
+  color: var(--primary-color);
+}
+
+.cta-link:hover ~ .cta-arrow-svg .arrow {
+  stroke: var(--primary-color);
+  
+}
+
+@media (min-width: 627px) {
+  .cta--wrapper {
+   
+    width: 75%;
+  }
+}
+
+@media (min-width: 744px) {
+  .cta {
+    margin-bottom: 3.5rem;
+  }
+}
+
+@media (min-width: 956px) {
+  .cta {
+    margin-bottom: 4.5rem;
+  }
+}
+
+/*!****************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./public/css/partials/services.css ***!
+  \****************************************************************************************************************/
+.services {
+  padding-left:    var(--padding-left-right);
+  padding-right:   var(--padding-left-right);
+  max-width:       calc(824px + 2*(var(--padding-left-right)));
+  display:         flex;
+  flex-flow:       column nowrap;
+  gap:             2rem;
+  align-items:     center;
+  justify-content: flex-start;
+}
+
+  .services-headline {
+    padding-top:     2rem;
+    width:           clamp(15.6rem, 100%, 23.75rem);
+  }
+
+    .services-headline > h1 {
+      margin-bottom: 1.3rem;
+    }
+
+
+  .services--wrapper {
+    display:     flex;
+    flex-flow:   row wrap;
+    justify-content: center;
+    max-width:   824px;
+    gap:         4rem;
+    
+  }
+
+    .services-card {
+      display:       flex;
+      flex-flow:     column nowrap;
+      border:        .0625rem solid var(--primary-color);
+      border-radius: .5rem;
+      padding:       var(--card-padding);
+      width:         clamp(15.6rem, 100%, 23.75rem);
+    }
+
+      .max-height {
+        height: 100%;
+      }
+
+      .card-title {
+        border-bottom: .0625rem solid var(--secondary-color);
+        padding-bottom: var(--card-padding);
+        font-size: calc(var(--font-size-regular) * 1.4);
+        line-height: calc(var(--font-size-regular) * 1.4);
+        text-align:     center;
+        width:         100%;
+      }
+
+      .card-text {
+        padding-top: var(--card-padding);
+        padding-bottom: var(--card-padding);
+      }
+
+      /*aligning the bullet points to the text above*/
+
+        .card-list li {
+          list-style-position: inside;
+          display:             flex;
+          align-items:         flex-start;
+        }
+
+        .card-list {
+          padding-top:  .5rem;
+          padding-left: 0;
+        }
+
+        .card-list li:before {
+          content:      "•"; 
+          margin-right: 0.5rem; /* A bullet point távolsága a szövegtől */
+          font-size:    1rem;
+        }
+
+      .card-price {
+        padding-top: var(--card-padding);
+        border-top:  .0625rem solid var(--secondary-color);
+        text-align:  center;
+        font-size: calc(var(--font-size-regular) * 1.4);
+        line-height: calc(var(--font-size-regular) * 1.4);
+        font-weight: 600;
+      }
+
+
+
+
+   .cta__services {
+    padding-top:   2rem;
+    padding-left:  0;
+    padding-right: 0;
+    width:         clamp(15.6rem, 100%, 23.75rem);
+   }
+
+@media (min-width: 380px) {
+  :root {
+    --card-padding: 1.5625rem; 
+  }
+  
+}
+
+@media (min-width: 627px) {
+  .cta__services > .cta--wrapper {
+   width: unset;
+  }
+  .services {
+    gap: 4rem;
+  }
+  .services-headline {
+    padding-top: 4rem;
+  }
+}
+
+@media (min-width: 937px) {
+  .services-headline {
+    align-self: flex-start;
+    width:         clamp(15.6rem, 100%, 38.875rem);
+  }
+  .cta__services {
+    align-self: flex-start;
+    width:         clamp(15.6rem, 100%, 38.875rem);
+  }
+}
+
+
+
+
+    
+
+   
+ 
+
+     
+/*!***********************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./public/css/partials/faq.css ***!
+  \***********************************************************************************************************/
+.faq {
+  padding-top:    2rem;
+  gap:            2rem;
+  padding-left:   var(--padding-left-right);
+  padding-right:  var(--padding-left-right);
+  padding-bottom: 4rem;
+  max-width:      calc(31.07rem + 2 * var(--padding-left-right));
+}
+
+.faq-title {
+  
+  align-self: flex-start;
+ 
+}
+
+.faq-content {
+  
+  display: flex;
+  flex-flow: column nowrap;
+ 
+} 
+
+
+  .faq-item {
+    border-bottom: .0625rem solid var(--secondary-color);
+  }
+
+  .last-item {
+    border-bottom: none;
+  }
+
+
+    .faq-question {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      padding-top:   .5rem;
+      padding-bottom: .5rem;
+    }
+
+    .faq-answer {
+      padding-bottom: 1rem;
+    }
+
+   
+
+
+/*icon basic styling*/
+
+.icon {
+  width: 1em; /* Az ikon mérete a betűmérethez igazodik */
+  height: 1em; /* Az ikon mérete a betűmérethez igazodik */
+}
+
+.icon-path {
+  stroke: currentColor; /* Az ikon színe az aktuális színre változik */
+  stroke-width: 2; /* Vonalvastagság beállítása */
+}
+
+/*accordion related rules*/
+
+
+.js-question {
+  
+  cursor: pointer;
+}
+
+  .js-question-toggle {
+    margin-left: .5rem;
+    transition: transform .3s;
+  }
+
+  .js-question-toggle.rotated {
+    transform: rotate(180deg);
+  }
+
+  .js-question-text {
+    transition: font-weight .3s;
+  }
+
+  .js-question-text.bold {
+    font-weight: 600;
+  }
+
+
+  .js-answer {
+    display: none;
+    padding-left: .5em;
+    padding-right: .5em;
+    
+  }
+
+  .js-answer.visible {
+    display: block;
+  }
+
+@media (min-width: 420px) {
+  .faq {
+    gap: 3rem;
+    padding-top: 3rem;
+  }
+}
+
+@media (min-width: 682px) {
+  .faq {
+    padding-top: 4rem;
+    gap: 4rem;
+  }
+}
+/*!*****************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./public/css/partials/portfolio.css ***!
+  \*****************************************************************************************************************/
+.portfolio {
+  padding-left: var(--padding-left-right);
+  padding-right: var(--padding-left-right);
+  padding-top:   2rem;
+  gap:           2rem;
+  margin-bottom: 4rem;
+  max-width:     1440px;
+  
+}
+
+  .portfolio-headline {
+    width: clamp(15.6rem, 100%, 23.75rem);
+  }
+  
+  .portfolio--wrapper {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 4rem;
+  }
+
+  .portfolio-card {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "content"
+    "img"
+    "link";
+    border: .0625rem solid var(--primary-color);
+    border-radius: .5rem;
+    padding: var(--card-padding);
+    justify-content: center;
+    width: clamp(15.6rem, 100%, 23.75rem);
+    height: 100%;
+  }
+
+  .portfolio-content {grid-area: content;}
+  .img--wrapper {grid-area: img;}
+  .portfolio-link {grid-area: link;}
+
+  .portfolio-content h2, .portfolio-link {
+    font-size: calc(var(--font-size-regular) * 1.4);
+    line-height: calc(var(--font-size-regular) * 1.4);
+  }
+  .img--wrapper {
+    display:     flex;
+    gap:         2rem;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: var(--card-padding);
+  }
+  .pic__desktop {
+    display: none;
+  }
+  /*.img__desktop {
+    display: none;
+  }*/
+
+  .img__mobile {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: .5rem;
+    object-fit: cover;
+  }
+
+  .portfolio-link {
+        display:     block;
+        color:       var(--primary-color);
+        padding-top: var(--card-padding);
+        border-top:  .0625rem solid var(--secondary-color);
+        text-align:  center;
+        font-weight: 600;
+        
+  }
+
+  .portfolio-link:hover {
+    color: var(--secondary-color);
+  }
+
+@media (min-width: 627px) {
+  .portfolio {
+    gap: 4rem;
+    padding-top: 4rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .portfolio-headline {
+    width: clamp(15.6rem, 50%, 75rem);
+    align-self: flex-start
+  }
+  .portfolio-card {
+    display: grid;
+    grid-template-columns: 3fr 7fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "content img"
+    "link img";
+    width: clamp(15.6rem, 100%, 82.125rem); 
+    align-content: center;
+  }
+  .pic__desktop {
+    display: block;
+    width: 70%;
+  }
+  .img__desktop {
+    /*display: block;*/
+    width: 100%;
+    height: 100%;
+    border-radius: .5rem;
+    object-fit: cover;
+  }
+  .pic__mobile {
+    width: 20%;
+    height: 100%;
+    
+  }
+  .img__mobile {
+    width: 100%;
+    height: 100%;
+  }
+  .img--wrapper {
+    /*border: 1px solid red;*/
+    align-items: stretch;
+    justify-content: flex-end;
+    padding-bottom: 0;
+  }
+  .portfolio-content {
+    display: flex;
+    flex-flow: column nowrap;
+    /*border: 1px solid green;*/
+    align-items: center;
+  }
+  .portfolio-content > .card-title {
+    
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .portfolio-link {
+   /* border: 1px solid blue;*/
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .portfolio-content > .card-text {
+    width: 90%;
+    align-self: center;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+}
+/*!****************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./public/css/partials/contacts.css ***!
+  \****************************************************************************************************************/
+.contact {
+  padding-top:  1rem;
+  padding-left: var(--padding-left-right);
+  padding-right: var(--padding-left-right);
+  gap:           1rem;
+  padding-bottom: 2rem;
+  justify-content: center;
+  max-width:       1440px;
+ 
+}
+
+.contact-img {
+  width:         100%;
+  aspect-ratio:  1 / 1;
+  background:    url('/images/photos/mobile-profile.jpg') no-repeat center / cover;
+  background:    url('/images/photos/mobile-profile.webp') no-repeat center / cover;
+  border-radius: .5rem;
+}
+
+.contact--wrapper {
+  text-align: center;
+}
+
+  .contact-text {
+    font-weight: 600;
+    padding-bottom: .5rem;
+  }
+
+  .contact-email {
+    color: var(--brand-color);
+    
+  }
+
+  .contact-link {
+    color: var(--brand-color);
+    padding-right: .5rem;
+  }
+
+@media (min-width: 430px) {
+  .contact-img {
+    aspect-ratio: 4/3;
+    
+  }
+}
+
+@media (min-width: 744px) {
+  .contact {
+    gap: 2rem;
+    
+  }
+
+  .contact--wrapper {
+    width: 80%;
+  }
+}
+
+@media (min-width: 800px) {
+    .contact-img {
+    background: url('/images/photos/tablet-profile.jpg') no-repeat center / cover;
+    background: url('/images/photos/tablet-profile.webp') no-repeat center / cover;
+    }  
+}
+
+@media (min-width: 1024px) {
+  .contact {
+    padding-top:    0;
+    padding-left:   0;
+    padding-bottom: 0;
+    flex-flow:      row-reverse nowrap;
+    justify-content: flex-start;
+    gap:            3rem;
+    height:         calc(var(--hero-height) - var(--footer-height));
+  }
+
+  .contact-img {
+    background: url('/images/photos/desktop-profile-2.jpg') no-repeat bottom / cover;
+    background: url('/images/photos/desktop-profile-2.webp') no-repeat bottom / cover;
+    aspect-ratio: unset;
+    width: min(50%, 37.5rem);
+    height: 100vh;
+    border-radius: unset;
+    
+  }
+
+  .contact--wrapper {
+    width: min(50%, 33.75rem);
+    padding-left: 10%;
+    text-align: left;
+  }
+
+  
+}
+/*!***************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./public/css/partials/privacy.css ***!
+  \***************************************************************************************************************/
+
+ul.privacy--list {
+  list-style-type: none;
+  margin:          auto;
+}
+
+
+
+.privacy--contacts__wrapper {
+  display:         flex;
+  flex-flow:       column nowrap;
+  justify-content: flex-start;
+  align-items:     center;
+  gap:             0;
+  width:           100%;
+  margin-bottom:   1rem;
+}
+
+  .privacy--contacts {
+    padding-top:    0;
+    padding-bottom: 0;
+  }
+
+    .privacy--link {
+      color: var(--brand-color);
+    }
+
+    .privacy--link:hover {
+      text-decoration: underline;
+    }
+
+  
+/*!******************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./public/css/partials/impressium.css ***!
+  \******************************************************************************************************************/
+.impressium--wrapper {
+  display:         flex;
+  flex-flow:       column nowrap;
+  justify-content: flex-start;
+  align-items:     flex-start;
+  
+}
+
+  .impressium--subwrapper {
+    margin-top:    1rem;
+    margin-bottom: 1rem;
+  }
+/*!**************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./public/css/partials/footer.css ***!
+  \**************************************************************************************************************/
+footer {
+    height:           var(--footer-height);
+    width:            100%;
+    display:          flex;
+    flex-flow:        column nowrap;
+    justify-content:  center;  
+    align-items:      center;
+    padding-top:      calc(var(--line-height-small) / 2);
+    gap:              calc(var(--line-height-small) / 3);
+    padding-bottom:   calc(var(--line-height-small) / 2);
+    background:       var(--background-color);
+    border-top:       2px solid var(--secondary-color);
+    opacity:          1;
+    padding-left:     var(--padding-left-right);
+    padding-right:    var(--padding-left-right);
+    text-align:       center;
+    
+  }
+
+  .links--wrapper {
+    display:         flex;
+    flex-flow:       row nowrap;
+    justify-content: center;
+    align-items:     center;
+    gap:             .3125rem;
+    
+  
+  }
+  
+    .footer--text {
+      width:           69.375rem;
+      text-align:      center;
+      letter-spacing:  0.15rem;
+      text-transform:  uppercase;
+      font-size:       .75rem;
+      line-height:     var(--line-height-small);
+    }
+
+    .footer--text__link {
+      color:           var(--primary-color);
+    }
+
+    .footer--text__link:hover {
+      text-decoration: underline;
+    }
+  
+
+    
+/*!*************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./public/css/partials/icons.css ***!
+  \*************************************************************************************************************/
+/* Social media icons */
+
+.icons--wrapper {
+    /*width:           50%;*/
+    height:          2rem;
+    display:         flex;
+    flex-flow:       row nowrap;
+    justify-content: flex-start;
+    gap:             .625rem;
+
+  }
+
+    .icons {
+      display:          flex;
+      flex-flow:        row nowrap;
+      justify-content:  center;
+      align-items:      center;
+      width:            2rem;
+      height:           2rem;
+      background-color: var(--brand-color);
+      color:            var(--secondary-color);
+      opacity:          .8;
+      border-radius:    50%;
+    }
+
+    .icons:hover {
+      background-color: transparent;
+      color:            var(--brand-color);
+      border:           .125rem solid var(--brand-color);
+    }  
+
+
+    .icons__light {
+      background-color: var(--tertiary-color);
+      color:            var(--primary-color);
+    }
+
+    .icons__light:hover {
+        background-color: transparent;
+        color:            var(--tertiary-color);
+        border:           .125rem solid var(--tertiary-color);
+      }  
+
+/*!************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./public/css/partials/hide.css ***!
+  \************************************************************************************************************/
+.hide {
+  display: none;
+}
+/*!**************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./public/css/style.css ***!
+  \**************************************************************************************************************************************************************************/
+
+
+
+
+
+/*# sourceMappingURL=style.css.map*/

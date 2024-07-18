@@ -1,0 +1,146 @@
+.testimonials {
+  width:          100vw;
+  max-width:      1440px;
+  padding-left:   var(--padding-left-right);
+  padding-right:  var(--padding-left-right);
+  display:        flex;
+  flex-flow:      column nowrap;
+  align-items:    center;
+  justify-content: center;
+  gap:             1rem;
+ 
+}
+
+
+
+/*ARROWS*/
+
+.arrow--wrapper {
+  display: none;
+}
+
+
+
+
+
+/*TESTIMONIALS WRAPPER & CONTENT*/
+
+.testimonials-slider {
+  width:           100%;
+  display:         flex;
+  align-items:     center;
+  justify-content: space-between;
+}
+
+.testimonials--wrapper {
+  display:    flex;
+  overflow:   hidden;
+  z-index:    -1;
+}
+
+
+  .testimonials-content {
+    flex:            0 0 100%;  
+    text-align:      center;
+    display:         flex;
+    flex-flow:       column nowrap;
+    justify-content: flex-start;
+    align-items:     center;
+    gap:             1.25rem;
+    transition:      transform 0.5s ease;
+    
+            
+  }
+
+    
+
+  
+  .js-transform {
+    transform: translateX(-100%); /* A vízszintes elmozdulás animálásának megoldása */
+  }
+
+.testimonials-content h2 {
+  font-size:     var(--font-size-regular);
+  line-height:   var(--line-height-regular);
+  
+}
+
+  
+
+    
+
+  .testimonials-image {
+    width:          4.25rem;
+    height:         4.25rem;
+    border-radius:  50%;
+    object-fit:     cover;
+  }
+
+
+/*SMALL DOTS*/
+.dots--wrapper {
+  display:         flex;
+  flex-flow:       row nowrap;
+  align-items:     center;
+  justify-content: center;
+  gap:             .625rem;
+  
+}
+.js-dot {
+  width:            .625rem;
+  height:           .625rem;
+  border-radius:    50%;
+  background-color: var(--secondary-color);
+}
+
+.js-dot__active {
+  background-color: var(--primary-color);
+}
+
+
+
+@media (min-width:744px) {
+
+  .testimonials--wrapper {
+    width:          80%;
+    max-width:      731px;
+  }
+
+  
+  .arrow--wrapper {
+    width:           4.25rem;
+    height:          4.25rem;
+    border-radius:   50%;
+    border:          2px solid var(--secondary-color);
+    background:      var(--background-color); 
+    display:         flex;
+    align-items:     center;
+    justify-content: center;
+    color:           var(--secondary-color);
+    
+  }
+  
+    .arrow {
+      stroke:       var(--secondary-color);
+      stroke-width: 2; /* Nyíl vastagsága */
+      fill:         none;
+    }
+  
+  .arrow--wrapper:hover {
+    border-color: var(--primary-color); /* Border színének változása hover hatásra */
+    transition:   border-color 0.3s ease;
+  }
+  
+    .arrow--wrapper:hover .arrow {
+      stroke:     var(--primary-color); /* Színváltás hover hatásra */
+      transition: stroke 0.3s ease;
+  
+    }
+}
+
+@media (min-width:1000px) {
+  .testimonials-image {
+    width:          6.25rem;
+    height:         6.25rem;
+  }
+}

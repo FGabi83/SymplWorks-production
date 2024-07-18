@@ -1,0 +1,92 @@
+.contact {
+  padding-top:  1rem;
+  padding-left: var(--padding-left-right);
+  padding-right: var(--padding-left-right);
+  gap:           1rem;
+  padding-bottom: 2rem;
+  justify-content: center;
+  max-width:       1440px;
+ 
+}
+
+.contact-img {
+  width:         100%;
+  aspect-ratio:  1 / 1;
+  background:    url('/images/photos/mobile-profile.jpg') no-repeat center / cover;
+  background:    url('/images/photos/mobile-profile.webp') no-repeat center / cover;
+  border-radius: .5rem;
+}
+
+.contact--wrapper {
+  text-align: center;
+}
+
+  .contact-text {
+    font-weight: 600;
+    padding-bottom: .5rem;
+  }
+
+  .contact-email {
+    color: var(--brand-color);
+    
+  }
+
+  .contact-link {
+    color: var(--brand-color);
+    padding-right: .5rem;
+  }
+
+@media (min-width: 430px) {
+  .contact-img {
+    aspect-ratio: 4/3;
+    
+  }
+}
+
+@media (min-width: 744px) {
+  .contact {
+    gap: 2rem;
+    
+  }
+
+  .contact--wrapper {
+    width: 80%;
+  }
+}
+
+@media (min-width: 800px) {
+    .contact-img {
+    background: url('/images/photos/tablet-profile.jpg') no-repeat center / cover;
+    background: url('/images/photos/tablet-profile.webp') no-repeat center / cover;
+    }  
+}
+
+@media (min-width: 1024px) {
+  .contact {
+    padding-top:    0;
+    padding-left:   0;
+    padding-bottom: 0;
+    flex-flow:      row-reverse nowrap;
+    justify-content: flex-start;
+    gap:            3rem;
+    height:         calc(var(--hero-height) - var(--footer-height));
+  }
+
+  .contact-img {
+    background: url('/images/photos/desktop-profile-2.jpg') no-repeat bottom / cover;
+    background: url('/images/photos/desktop-profile-2.webp') no-repeat bottom / cover;
+    aspect-ratio: unset;
+    width: min(50%, 37.5rem);
+    height: 100vh;
+    border-radius: unset;
+    
+  }
+
+  .contact--wrapper {
+    width: min(50%, 33.75rem);
+    padding-left: 10%;
+    text-align: left;
+  }
+
+  
+}

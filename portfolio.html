@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="description" content="Nézd meg korábbi munkáimat, ahol egy-egy példát mutatok landing page, statikus és dinamikus weboldal típusokra.">
+    <title>SimpleWorks | Portfólió</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="/fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link href="/fontawesome/css/solid.css" rel="stylesheet">
+    <link href="/fontawesome/css/regular.css" rel="stylesheet">
+    <link rel="stylesheet" href="/dist/style.css">
+    <link rel="preload" fetchpriority="high" as="image" href="/images/photos/mobile-wedding.webp" type="image/webp">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&amp;family=Open+Sans:wght@300..800&amp;display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="/images/icons/logo_light.svg">
+  </head>
+  <body>
+    <div class="container"> 
+      <header>
+        <div class="header--wrapper"><a class="js-nav--item__logo text__logo" href="/">SymplWorks</a>
+          <div class="js-nav--wrapper">
+            <div>
+              <nav class="nav"><a class="js-nav--item text__nav" href="/">Kezdőlap</a><a class="js-nav--item text__nav" href="/szolgaltatasok">Szolgáltatások</a><a class="js-nav--item text__nav" href="/gyik">GYIK</a><a class="js-nav--item text__nav" href="/portfolio">Portfólió</a><a class="js-nav--item text__nav" href="/kapcsolat">Kapcsolat</a>
+              </nav>
+            </div>
+          </div>
+          <div class="js-nav--menu"> <i class="fa fa-bars"></i></div>
+        </div>
+      </header>
+      <main class="portfolio">
+        <h1 class="title text__brand portfolio-headline">Tekintsd meg néhány korábbi munkámat!</h1>
+        <div class="portfolio--wrapper"> 
+          <div class="portfolio-card">
+            <div class="portfolio-content"> 
+              <h2 class="title text__brand card-title">Landing page</h2>
+              <p class="card-text">Landing page koncepció terv esküvőt szervező pár részére. A pár képe görgetésre banner-ré változik.</p>
+            </div>
+            <div class="img--wrapper">
+              <picture class="pic__desktop"> 
+                <source srcset="/images/photos/desktop-wedding.webp" type="image/webp"><img class="img__desktop" src="/images/photos/desktop-wedding.jpg" alt="Esküvő landing page asztali verzió">
+              </picture>
+              <picture class="pic__mobile">
+                <source srcset="/images/photos/mobile-wedding.webp" type="image/webp"><img class="img__mobile" src="/images/photos/mobile-wedding.jpg" alt="Esküvő landing page mobil verzió">
+              </picture>
+            </div><a class="portfolio-link" href="https://wedding-page-six.vercel.app/" target="_blank">Megtekintés</a>
+          </div>
+          <div class="portfolio-card"> 
+            <div class="portfolio-content">
+              <h2 class="title text__brand card-title">Statikus weboldal </h2>
+              <p class="card-text">Több oldalas statikus weboldal egy pszichológus számára, ahol a nagy mennyiségű szöveg elrendezésére volt kihívás, hogy könnyen áttekinthető legyen.</p>
+            </div>
+            <div class="img--wrapper">
+              <picture class="pic__desktop"> 
+                <source srcset="/images/photos/desktop-szenasi.webp" type="image/webp"><img class="img__desktop" src="/images/photos/desktop-szenasi.jpg" alt="Szénási Ágnes asztali verzió">
+              </picture>
+              <picture class="pic__mobile">
+                <source srcset="/images/photos/mobile-szenasi.webp" type="image/webp"><img class="img__mobile" src="/images/photos/mobile-szenasi.jpg" alt="Szénási Ágnes mobil verzió">
+              </picture>
+            </div><a class="portfolio-link" href="https://szenasiagnes-pszichologia.hu/" target="_blank">Megtekintés</a>
+          </div>
+          <div class="portfolio-card">
+            <div class="portfolio-content"> 
+              <h2 class="title text__brand card-title">Dinamikus weboldal </h2>
+              <p class="card-text">Egy pub dinamikus weboldala, ahol a kínálat oldalon szereplő csapon lévő söröket admin felületen lehet beállítani.</p>
+            </div>
+            <div class="img--wrapper">
+              <picture class="pic__desktop"> 
+                <source srcset="/images/photos/desktop-bagolypub.webp" type="image/webp"><img class="img__desktop" src="/images/photos/desktop-bagolypub.jpg" alt="Bagoly Pub asztali verzió">
+              </picture>
+              <picture class="pic__mobile">
+                <source srcset="/images/photos/mobile-bagolypub.webp" type="image/webp"><img class="img__mobile" src="/images/photos/mobile-bagolypub.jpg" alt="Bagoly Pub mobil verzió">
+              </picture>
+            </div><a class="portfolio-link" href="https://bagolypub.hu/" target="_blank">Megtekintés</a>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <div class="links--wrapper"><a class="footer--text__link text__small" href="/adatvedelem">Adatvédelmi Tájékoztató</a><span>|  </span><a class="footer--text__link text__small" href="/impresszum"> Impresszum</a></div>
+        <p class="text__small">Köszönet <a class="footer--text__link" href="https://imolatar.wixsite.com/home" target="_blank">Tar Imolának</a> a kapcsolat oldalon található fotóért.</p>
+        <p class="footer--text">© 2024 Copyright SimpleWorks</p>
+      </footer>
+    </div>
+    <script src="/dist/App.bundle.js"></script>
+  </body>
+</html>

@@ -1,0 +1,109 @@
+.faq {
+  padding-top:    2rem;
+  gap:            2rem;
+  padding-left:   var(--padding-left-right);
+  padding-right:  var(--padding-left-right);
+  padding-bottom: 4rem;
+  max-width:      calc(31.07rem + 2 * var(--padding-left-right));
+}
+
+.faq-title {
+  
+  align-self: flex-start;
+ 
+}
+
+.faq-content {
+  
+  display: flex;
+  flex-flow: column nowrap;
+ 
+} 
+
+
+  .faq-item {
+    border-bottom: .0625rem solid var(--secondary-color);
+  }
+
+  .last-item {
+    border-bottom: none;
+  }
+
+
+    .faq-question {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      padding-top:   .5rem;
+      padding-bottom: .5rem;
+    }
+
+    .faq-answer {
+      padding-bottom: 1rem;
+    }
+
+   
+
+
+/*icon basic styling*/
+
+.icon {
+  width: 1em; /* Az ikon mérete a betűmérethez igazodik */
+  height: 1em; /* Az ikon mérete a betűmérethez igazodik */
+}
+
+.icon-path {
+  stroke: currentColor; /* Az ikon színe az aktuális színre változik */
+  stroke-width: 2; /* Vonalvastagság beállítása */
+}
+
+/*accordion related rules*/
+
+
+.js-question {
+  
+  cursor: pointer;
+}
+
+  .js-question-toggle {
+    margin-left: .5rem;
+    transition: transform .3s;
+  }
+
+  .js-question-toggle.rotated {
+    transform: rotate(180deg);
+  }
+
+  .js-question-text {
+    transition: font-weight .3s;
+  }
+
+  .js-question-text.bold {
+    font-weight: 600;
+  }
+
+
+  .js-answer {
+    display: none;
+    padding-left: .5em;
+    padding-right: .5em;
+    
+  }
+
+  .js-answer.visible {
+    display: block;
+  }
+
+@media (min-width: 420px) {
+  .faq {
+    gap: 3rem;
+    padding-top: 3rem;
+  }
+}
+
+@media (min-width: 682px) {
+  .faq {
+    padding-top: 4rem;
+    gap: 4rem;
+  }
+}
