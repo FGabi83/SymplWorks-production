@@ -1,32 +1,65 @@
 
-ul.privacy--list {
-  list-style-type: none;
-  margin:          auto;
-}
-
-
-
-.privacy--contacts__wrapper {
-  display:         flex;
-  flex-flow:       column nowrap;
+.privacy--wrapper {
+  display: flex;
+  flex-flow: column nowrap;
   justify-content: flex-start;
-  align-items:     center;
-  gap:             0;
-  width:           100%;
-  margin-bottom:   1rem;
+  align-items: flex-start;
+  width: min(600px, 90%);
+  gap: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  
 }
 
-  .privacy--contacts {
-    padding-top:    0;
-    padding-bottom: 0;
-  }
+.privacy--wrapper h2 {
+  font-size: var(--font-size-regular);
+  line-height: var(--line-height-regular);
+}
 
-    .privacy--link {
-      color: var(--brand-color);
-    }
+.last-p {
+  margin-bottom: 2rem;;
+}
 
-    .privacy--link:hover {
-      text-decoration: underline;
-    }
+/*  LISTS  */
 
+.privacy--wrapper li {
+  list-style-position: inside;
+  display:             flex;
+  align-items:         flex-start;
   
+}
+
+.privacy--wrapper ul {
+  padding-left: 0;
+}
+
+
+
+.privacy--wrapper ul li:before {
+  content:      "•"; 
+  margin-right: 0.5rem; /* A bullet point távolsága a szövegtől */
+  font-size:    1.5rem;
+}
+
+
+
+
+/* LINKS */
+
+.privacy--link {
+  color: var(--brand-color);
+}
+
+.privacy--link:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 600px) {
+  .privacy--wrapper {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  .privacy--wrapper h1 {
+    margin-bottom: 1rem;
+  }
+} 

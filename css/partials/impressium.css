@@ -1,12 +1,19 @@
-.impressium--wrapper {
+.impressum--wrapper {
   display:         flex;
   flex-flow:       column nowrap;
   justify-content: flex-start;
   align-items:     flex-start;
+  max-width:       47rem;
+  padding-top:     2rem;
+  padding-bottom:  2rem;
   
 }
 
-  .impressium--subwrapper {
-    margin-top:    1rem;
+  .impressum--subwrapper {
+    margin-top:    2rem;
+    margin-bottom: 2rem;
+  }
+
+  .impressum--wrapper h2 {
     margin-bottom: 1rem;
   }
