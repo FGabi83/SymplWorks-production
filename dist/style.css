@@ -1002,12 +1002,14 @@ HERO SECTION
     
     .hero-text {
       grid-area: text;
+      /*place-self: center start;*/
       width: 75%;
       padding-left: 15%;
       
     }
     .hero-buttons {
       grid-area: buttons;
+      /*place-self: center start; */
       margin:    0;
       
       
