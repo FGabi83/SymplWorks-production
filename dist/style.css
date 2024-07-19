@@ -1876,11 +1876,12 @@ HERO SECTION
   flex-flow: column nowrap;
   justify-content: flex-start;
   align-items: flex-start;
-  width: min(600px, 90%);
+  width: min(600px, 100%);
   gap: 1rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  
+  padding-left: var(--padding-left-right);
+  padding-right: var(--padding-left-right);
 }
 
 .privacy--wrapper h2 {
@@ -1946,6 +1947,8 @@ HERO SECTION
   max-width:       47rem;
   padding-top:     2rem;
   padding-bottom:  2rem;
+  padding-left: var(--padding-left-right);
+  pading-right: var(--padding-left-right);
   
 }
 
