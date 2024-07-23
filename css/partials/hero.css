@@ -26,27 +26,37 @@ HERO SECTION
   .hero-image {
     width:         100%;
     height:        100%;
-    height: 50%;
+    height:        50%;
     background:  url('/images/photos/mobile-smartphone-hero.jpg') no-repeat left center / cover;
     background:  url('/images/photos/mobile-smartphone-hero.webp') no-repeat left center / cover;
   }
 
-  .hero-title, .hero-text, .hero-buttons {
+  .hero-title, .hero-content {
     width:           100%;
     padding-left:    var(--padding-left-right);
     padding-right:   var(--padding-left-right);
   }
 
   .hero-title {
-    /*margin-top: auto;*/
+    margin-top: auto;
+  }
+
+  .hero-content {
+    display:        flex;
+    flex-flow:      column nowrap;
+    justify-content: space-between;
+    align-items:    center;
+    gap:            1rem;
+    flex-grow:      1;
+   
   }
 
   .hero-buttons {
-    margin-top: 1rem;
+    margin-top: auto;
     padding-bottom: 1rem;
   }
   
-   @media (min-height: 600px) {
+   /*@media (min-height: 600px) {
     .hero-title {
       margin-top: auto;
       
@@ -55,7 +65,7 @@ HERO SECTION
       margin-top: auto;
       margin-bottom: .5rem;
     }
-   }
+   }*/
  
   @media (min-width: 768px) {
     .hero-image {
@@ -79,6 +89,16 @@ HERO SECTION
       margin-bottom:auto;
     }
   }
+
+  @media (min-width: 1000px) {
+    .hero-image {
+      height: 65%;
+      
+    }
+    .hero-text {
+      width: 60%;
+    }
+  }
   @media (min-width: 1200px) {
     .hero {
       display: grid;
@@ -86,7 +106,7 @@ HERO SECTION
       grid-template-rows: auto;
       grid-template-areas:
       "title img"
-      "text buttons";
+      "content content";
       place-items: start;
       row-gap: 10rem;
       
@@ -109,25 +129,46 @@ HERO SECTION
       margin: 0;
       
     }
+
+    .hero-content {
+      grid-area: content;
+      place-self: center start;
+      padding-left: 7.5%; /*15% of the 50% of the screen to align with the title*/
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      
+    }
     
     .hero-text {
-      grid-area: text;
-      width: 75%;
-      padding-left: 15%;
+      /*grid-area: text;*/
+      /*place-self: center start;*/
+     width: 90%;
+      /*padding-left: 15%;*/
       
     }
     .hero-buttons {
-      grid-area: buttons;
-      margin:    0;
-      
+      /*grid-area: buttons;*/
+      /*place-self: center start; */
+      margin: 0;
+     
+      padding: 0;
+      align-self: flex-end;
+      height: 100%;
+      justify-content: center;
       
     }
    
   }
 
- @media (min-width: 1333px) {
+ @media (min-width: 1327px) {
     .hero-title {
       width: 130%;
+    }
+    .hero-content {
+      place-self: start;
+    }
+    .hero-text {
+      width: 75%;
     }
   }
 
@@ -144,16 +185,22 @@ HERO SECTION
       width: 110%;
       position: relative;
       left: 25%;
+      
     }
     .hero-text {
+      width: 60%;
       position: relative;
-      left: 25%;
+      left: 14%;
+      
     }
-  }
+    
+}
   @media (min-width: 1783px) {
     .hero-title {
       width: 100%;
-      
+    }
+    .hero-text {
+      width: 50%;
     }
   }
 
