@@ -374,7 +374,7 @@
     --font-size-small:      0.875rem;
     --line-height-small:    1.2rem;
     --header-height:        clamp(3.5rem, 5vw + 2rem, 6rem);
-    --hero-height:          calc(100vh - var(--header-height)); 
+    --hero-height:          calc(100dvh - var(--header-height)); 
     --padding-left-right:   6%; 
     --card-padding:         1.25rem;
     --footer-height:        auto; 
@@ -915,7 +915,6 @@ HERO SECTION
    
   .hero-image {
     width:         100%;
-    height:        100%;
     height:        50%;
     background:  url('/images/photos/mobile-smartphone-hero.jpg') no-repeat left center / cover;
     background:  url('/images/photos/mobile-smartphone-hero.webp') no-repeat left center / cover;
@@ -946,20 +945,8 @@ HERO SECTION
     padding-bottom: 1rem;
   }
   
-   /*@media (min-height: 600px) {
-    .hero-title {
-      margin-top: auto;
-      
-    }
-    .hero-buttons {
-      margin-top: auto;
-      margin-bottom: .5rem;
-    }
-   }*/
- 
   @media (min-width: 768px) {
     .hero-image {
-      height: 50%;
       background: url('/images/photos/tablet-smartphone-hero.jpg') no-repeat left center / cover;
       background: url('/images/photos/tablet-smartphone-hero.webp') no-repeat left center / cover;
     }
@@ -1030,24 +1017,15 @@ HERO SECTION
     }
     
     .hero-text {
-      /*grid-area: text;*/
-      /*place-self: center start;*/
-     width: 90%;
-      /*padding-left: 15%;*/
-      
+      width: 90%;
     }
     .hero-buttons {
-      /*grid-area: buttons;*/
-      /*place-self: center start; */
       margin: 0;
-     
       padding: 0;
       align-self: flex-end;
       height: 100%;
       justify-content: center;
-      
     }
-   
   }
 
  @media (min-width: 1327px) {
@@ -2058,58 +2036,6 @@ footer {
   
 
     
-/*!*************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./public/css/partials/icons.css ***!
-  \*************************************************************************************************************/
-/* Social media icons */
-
-.icons--wrapper {
-    /*width:           50%;*/
-    height:          2rem;
-    display:         flex;
-    flex-flow:       row nowrap;
-    justify-content: flex-start;
-    gap:             .625rem;
-
-  }
-
-    .icons {
-      display:          flex;
-      flex-flow:        row nowrap;
-      justify-content:  center;
-      align-items:      center;
-      width:            2rem;
-      height:           2rem;
-      background-color: var(--brand-color);
-      color:            var(--secondary-color);
-      opacity:          .8;
-      border-radius:    50%;
-    }
-
-    .icons:hover {
-      background-color: transparent;
-      color:            var(--brand-color);
-      border:           .125rem solid var(--brand-color);
-    }  
-
-
-    .icons__light {
-      background-color: var(--tertiary-color);
-      color:            var(--primary-color);
-    }
-
-    .icons__light:hover {
-        background-color: transparent;
-        color:            var(--tertiary-color);
-        border:           .125rem solid var(--tertiary-color);
-      }  
-
-/*!************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./public/css/partials/hide.css ***!
-  \************************************************************************************************************/
-.hide {
-  display: none;
-}
 /*!**************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./public/css/style.css ***!
   \**************************************************************************************************************************************************************************/
