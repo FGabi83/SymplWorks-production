@@ -95,7 +95,7 @@ HERO SECTION
       "title img"
       "content content";
       place-items: start;
-      row-gap: 10rem;
+      
       
     }
     .hero-image {
@@ -104,12 +104,13 @@ HERO SECTION
       background: url('/images/photos/smartphone-hero.webp') no-repeat left center / cover;
       z-index: 1;
       height: 45.7vh;
+     
     }
     .hero-title {
       grid-area: title;
       font-size: 5rem;
       line-height: calc(5rem * 1.5);
-      place-self: end start;
+      place-self: center start;
       width: 140%;
       padding-left: 15%;
       z-index: 2;
@@ -123,6 +124,7 @@ HERO SECTION
       padding-left: 7.5%; /*15% of the 50% of the screen to align with the title*/
       flex-flow: row nowrap;
       justify-content: space-between;
+      
       
     }
     
@@ -138,6 +140,7 @@ HERO SECTION
     }
   }
 
+ 
  @media (min-width: 1327px) {
     .hero-title {
       width: 130%;

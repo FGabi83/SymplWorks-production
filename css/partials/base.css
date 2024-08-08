@@ -18,7 +18,7 @@
     --hero-title:           clamp(1.6875rem, 2vw + 1rem, 2.8125rem);
     --font-size-small:      0.875rem;
     --line-height-small:    1.2rem;
-    --header-height:        clamp(3.5rem, 5vw + 2rem, 6rem);
+    --header-height:        clamp(3.5rem, 4vw + 1rem, 4.5rem);
     --hero-height:          calc(100dvh - var(--header-height)); 
     --padding-left-right:   6%; 
     --card-padding:         1.25rem;
