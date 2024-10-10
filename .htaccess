@@ -1,9 +1,15 @@
+# Engedélyezzük a mod_rewrite használatát
 RewriteEngine On
 
-# Kivétel a robots.txt fájlra
-RewriteCond %{REQUEST_URI} ^/robots\.txt$ [NC]
-RewriteRule ^ - [L]
+# Átirányítás a www nélküli URL-ekre - ezt csináljuk először
+RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
 
+# Külön kezeljük a robots.txt-t
+RewriteCond %{REQUEST_URI} !^/robots\.txt$ [NC]
+
+# Ha az URL nem végződik már .html-lel, akkor a .html fájlt keressük belső átirányítással
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^([^/]+)$ $1.html [L]
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^([^/]+)/?$ $1.html [L]

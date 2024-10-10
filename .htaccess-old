@@ -1,0 +1,9 @@
+RewriteEngine On
+
+# Kivétel a robots.txt fájlra
+RewriteCond %{REQUEST_URI} ^/robots\.txt$ [NC]
+RewriteRule ^ - [L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^/]+)$ $1.html [L]
