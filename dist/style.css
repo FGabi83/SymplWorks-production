@@ -371,10 +371,12 @@
     --line-height-regular:  calc(var(--font-size-regular) * 1.5);
     --font-size-title:      clamp(1.6875rem, 2vw + 1rem, 2.1875rem);
     --hero-title:           clamp(1.6875rem, 2vw + 1rem, 2.8125rem);
+    --hero-title:           clamp(1.688rem, 3vw + 1rem, 3.75rem);
+    --hero-title-lineheight: calc(var(--hero-title) * 1.2);
     --font-size-small:      0.875rem;
     --line-height-small:    1.2rem;
     --header-height:        clamp(3.5rem, 4vw + 1rem, 4.5rem);
-    --hero-height:          calc(100dvh - var(--header-height)); 
+    --hero-height:          calc(100vh - var(--header-height)); 
     --padding-left-right:   6%; 
     --card-padding:         1.25rem;
     --footer-height:        auto; 
@@ -436,9 +438,11 @@ html {
       .title__hero {
         font-family:    'Montserrat', sans-serif;
         font-weight:    600;
+        color:          rgba(var(--primary-color-rgb, 1));
         font-size:      var(--hero-title);
         line-height:    calc(var(--hero-title) * 1.2);
-        margin-bottom:  1rem;
+        
+        
       }
 
       
@@ -574,7 +578,10 @@ html {
 .btn {
       
     display:        inline-block;
-    width:          max(100%, 11.6436rem);
+    /*width:          max(100%, 11.6436rem);*/
+    min-width:        12.2rem;
+    width:           100%;
+    max-width:       14.375rem;
     border:         0.125rem solid;
     border-radius:  .5rem;
     opacity:        1;
@@ -620,7 +627,7 @@ html {
       background:   var(--brand-color) 0% 0% no-repeat padding-box;
       border-color: var(--brand-color);
       color:        var(--background-color);
-      border:       1px solid;
+      border:       1px solid var(--brand-color);
     }
 
     .btn__primary__hero:hover {
@@ -651,13 +658,19 @@ html {
       justify-content: flex-start;
       width:           100%;
       gap:             1rem; /*1.4rem volt*/
-      margin-top:      1rem;
+      
+      /*margin-top:      1rem;
       margin-bottom:   1.1875rem;
       margin-bottom:   0;
-      z-index:         2;
+      z-index:         2;*/
     }
 
- 
+ @media(min-width: 701px) {
+  .btn--wrapper {
+    flex-flow: row nowrap;
+    
+  }
+ }
 /*@media (min-width: 435px) {
   .btn {
     max-width:    15rem;
@@ -666,10 +679,10 @@ html {
     max-width: unset;
   }
 }*/
-@media (min-width: 568px) {
+/*@media (min-width: 568px) {
   .btn--wrapper {
     flex-flow:       row nowrap;
-   /* gap:             1rem;*/
+   
   }
   .btn {
     max-width:    15rem;
@@ -700,11 +713,11 @@ html {
 }
 @media (min-width: 1200px) {
   .btn {
-   /* font-size: 1rem;*/
+   
     padding-left: 1rem;
     padding-right: 1rem;
   }
-}
+}*/
 
 
 
@@ -902,28 +915,59 @@ HERO SECTION
 
 .hero {
     width:              100%;
-    max-width:          1920px;
+    /*max-width:          1920px;*/ /* nneed a better resolution bg img*/
     display:            flex;
     flex-flow:          column nowrap;
-    justify-content:    flex-start;
+    justify-content:    center;
     align-items:        center;
-    height:             var(--hero-height);
-    gap:                .5rem;
+    min-height:             var(--hero-height);
+    
   } 
   
   
    
   .hero-image {
     width:         100%;
-    height:        50%;
-    background:  url('/images/photos/mobile-smartphone-hero.jpg') no-repeat left center / cover;
-    background:  url('/images/photos/mobile-smartphone-hero.webp') no-repeat left center / cover;
+    height:        100%;
+    background:  url('/images/photos/mobile_newestH.jpg') no-repeat left center / cover;
+    background:  url('/images/photos/mobile_newestH.webp') no-repeat left center / cover;
   }
+
+  .hero-glass {
+    width: 87%;
+    max-width: 35.082rem;
+    max-width: 40rem;
+    height: auto;
+    border-radius: .5rem;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 1.5rem;
+    /*background-color: rgba(255, 255, 255, 0.09);
+    border: 1px solid rgba(255, 255, 255, 0.1);*/
+    padding: 1.625rem 1.5rem;
+    position: relative;
+  }
+  .hero-glass:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: .5rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(20px);
+  }
+
+  
 
   .hero-title, .hero-content {
     width:           100%;
-    padding-left:    var(--padding-left-right);
-    padding-right:   var(--padding-left-right);
+    max-width:       25.44rem;
+    max-width:       36rem;
+    z-index:         2;
   }
 
   .hero-title {
@@ -935,22 +979,25 @@ HERO SECTION
     flex-flow:      column nowrap;
     justify-content: space-between;
     align-items:    center;
-    gap:            1rem;
-    flex-grow:      1;
+    gap:            2rem;
+    
    
   }
 
   .hero-buttons {
     margin-top: auto;
-    padding-bottom: 1rem;
+    /*padding-bottom: 1rem;*/
   }
   
   @media (min-width: 768px) {
     .hero-image {
-      background: url('/images/photos/tablet-smartphone-hero.jpg') no-repeat left center / cover;
-      background: url('/images/photos/tablet-smartphone-hero.webp') no-repeat left center / cover;
+      background: url('/images/photos/tablet_newestH.jpg') no-repeat left center / cover;
+      background: url('/images/photos/tablet_newestH.webp') no-repeat left center / cover;
     }
-    .hero-title {
+    .hero-content {
+      gap: 2rem;
+    }
+    /*.hero-title {
       font-size: 2.5rem;
       line-height: calc(2.5rem * 1.5);
       width: 80%;
@@ -964,19 +1011,16 @@ HERO SECTION
     .hero-buttons {
       margin-top: auto;
       margin-bottom:auto;
-    }
+    }*/
   }
 
   @media (min-width: 1000px) {
     .hero-image {
-      height: 65%;
-      
-    }
-    .hero-text {
-      width: 60%;
+      background: url('/images/photos/newesthero.jpg') no-repeat left center / cover;
+      background: url('/images/photos/newesthero.webp') no-repeat left center / cover;
     }
   }
-  @media (min-width: 1200px) {
+  /*@media (min-width: 1200px) {
     .hero {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -1011,7 +1055,7 @@ HERO SECTION
     .hero-content {
       grid-area: content;
       place-self: center start;
-      padding-left: 7.5%; /*15% of the 50% of the screen to align with the title*/
+      padding-left: 7.5%; /*15% of the 50% of the screen to align with the title
       flex-flow: row nowrap;
       justify-content: space-between;
       
@@ -1082,7 +1126,7 @@ HERO SECTION
   .hero-title {
     top: 8.4vh;
   }
- }
+ }*/
 /*!***************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./public/css/partials/feature.css ***!
   \***************************************************************************************************************/
