@@ -950,6 +950,7 @@ HERO SECTION
     border-radius: .5rem;
     background-color: rgba(255, 255, 255, 0.2);
     border: 1px solid rgba(255, 255, 255, 0.4);
+    -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
   }
   
