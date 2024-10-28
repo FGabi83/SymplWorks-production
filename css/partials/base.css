@@ -9,17 +9,18 @@
     --secondary-color-rgb:  244, 195, 162;
     --brand-color:          #5F7E92; 
     --brand-color-rgb:      95, 126, 146;
-   /* --brand-color:          #465A6D;*/
-    --background-color:     #FFFFFF; /* white*/
+    --background-color:     #fdfdfd; /* white*/
     --background-color-rgb: 255, 255, 255;
     --font-size-regular:    clamp(1rem, 1vw + .5rem, 1.125rem);
     --line-height-regular:  calc(var(--font-size-regular) * 1.5);
     --font-size-title:      clamp(1.6875rem, 2vw + 1rem, 2.1875rem);
     --hero-title:           clamp(1.6875rem, 2vw + 1rem, 2.8125rem);
+    --hero-title:           clamp(1.688rem, 3vw + 1rem, 3.75rem);
+    --hero-title-lineheight: calc(var(--hero-title) * 1.2);
     --font-size-small:      0.875rem;
     --line-height-small:    1.2rem;
     --header-height:        clamp(3.5rem, 4vw + 1rem, 4.5rem);
-    --hero-height:          calc(100dvh - var(--header-height)); 
+    --hero-height:          calc(100vh - var(--header-height)); 
     --padding-left-right:   6%; 
     --card-padding:         1.25rem;
     --footer-height:        auto; 
@@ -81,9 +82,11 @@ html {
       .title__hero {
         font-family:    'Montserrat', sans-serif;
         font-weight:    600;
+        color:          var(--primary-color);
         font-size:      var(--hero-title);
         line-height:    calc(var(--hero-title) * 1.2);
-        margin-bottom:  1rem;
+        
+        
       }
 
       

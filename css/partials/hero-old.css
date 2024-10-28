@@ -1,0 +1,119 @@
+/*********************************************************************\
+HERO SECTION
+\********************************************************************/
+/*
+*Hero background and color.................mobile view
+*
+*Hero layout and background changes........for bigger screens
+*/
+
+
+/* Hero background and color */
+
+.hero {
+  width:              100%;
+  display:            flex;
+  flex-flow:          column nowrap;
+  justify-content:    flex-start;
+  align-items:        center;
+  height:             var(--hero-height);
+  
+} 
+
+
+.hero-content {
+  display:         flex;
+  flex-flow:       column nowrap;
+  justify-content: flex-start;
+  align-items:     flex-start;
+  width:           100%;
+  padding-left:    var(--padding-left-right);
+  padding-right:   var(--padding-left-right);
+  padding-top:     1.8125rem;
+  background:      linear-gradient(to bottom, #ffff 50%, #EBEAEF 100%);
+  height:          auto; 
+  
+}
+
+.hero-image {
+  width:         100%;
+  /*aspect-ratio:    1.5 / 1;*/
+  height:        100%;
+  background:  url('/images/photos/hero-mobile.jpg') no-repeat center / cover;
+  box-shadow:    0 0 10px 0 rgba(235, 234, 239, 1);
+  z-index:       1;
+  
+  
+}
+
+  
+
+/*Hero background and layout for bigger screens*/
+@media (min-height: 638px) {
+  .hero-content {
+    padding-bottom: 1.8125rem; 
+  }
+}
+@media (min-width: 641px) {
+  .hero-content {
+    padding-top: 4rem;
+  }
+  .hero-content > * {
+    width:  80%;
+    align-self: flex-start;
+  }
+  .hero-image {
+    background:    url('/images/photos/hero-tablet.jpg') no-repeat center / cover;
+  }
+  
+  
+}
+
+/* 986px volt*/
+@media (min-width: 1200px) {
+  .hero {
+    flex-flow:        row-reverse nowrap; /* eredeti */
+    flex-flow:        row nowrap;
+    justify-content:  center;
+    align-items:      center;
+    height:           var(--hero-height);
+  }
+  .hero-content {
+    background:      var(--background-color);
+    width:           50%;
+    height:          100%;
+    justify-content: center;
+   
+  }
+  .hero-content > * {
+    width: min(100%, 571.531px);
+    align-self: flex-end;
+  }
+  .hero-image {
+    background:    url('/images/photos/hero-desktop.jpg') no-repeat center / cover;
+    background-position: 35% center;
+    width:           50%;
+    height:          100%;
+    box-shadow:      unset;
+    z-index:         unset;
+  }
+}
+
+@media (min-width: 1440px) {
+  .hero {
+    position: relative;
+  }
+  .hero::before {
+    content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--secondary-color);
+  opacity: .1;
+  box-shadow: 0 50px 50px 0 rgba(var(--secondary-color), 1);
+   
+  }
+  /*border-bottom: 2px solid #E9E9F1;*/
+}

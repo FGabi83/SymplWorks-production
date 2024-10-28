@@ -6,6 +6,8 @@
   max-width:       47rem;
   padding-top:     2rem;
   padding-bottom:  2rem;
+  padding-left: var(--padding-left-right);
+  padding-right: var(--padding-left-right);
   
 }
 

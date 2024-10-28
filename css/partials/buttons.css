@@ -1,7 +1,10 @@
 .btn {
       
     display:        inline-block;
-    width:          max(100%, 11.6436rem);
+    /*width:          max(100%, 11.6436rem);*/
+    min-width:        12.2rem;
+    width:           100%;
+    max-width:       14.375rem;
     border:         0.125rem solid;
     border-radius:  .5rem;
     opacity:        1;
@@ -47,7 +50,7 @@
       background:   var(--brand-color) 0% 0% no-repeat padding-box;
       border-color: var(--brand-color);
       color:        var(--background-color);
-      border:       1px solid;
+      border:       1px solid var(--brand-color);
     }
 
     .btn__primary__hero:hover {
@@ -78,13 +81,19 @@
       justify-content: flex-start;
       width:           100%;
       gap:             1rem; /*1.4rem volt*/
-      margin-top:      1rem;
+      
+      /*margin-top:      1rem;
       margin-bottom:   1.1875rem;
       margin-bottom:   0;
-      z-index:         2;
+      z-index:         2;*/
     }
 
- 
+ @media(min-width: 701px) {
+  .btn--wrapper {
+    flex-flow: row nowrap;
+    
+  }
+ }
 /*@media (min-width: 435px) {
   .btn {
     max-width:    15rem;
@@ -93,10 +102,10 @@
     max-width: unset;
   }
 }*/
-@media (min-width: 568px) {
+/*@media (min-width: 568px) {
   .btn--wrapper {
     flex-flow:       row nowrap;
-   /* gap:             1rem;*/
+   
   }
   .btn {
     max-width:    15rem;
@@ -127,11 +136,11 @@
 }
 @media (min-width: 1200px) {
   .btn {
-   /* font-size: 1rem;*/
+   
     padding-left: 1rem;
     padding-right: 1rem;
   }
-}
+}*/
 
 
 

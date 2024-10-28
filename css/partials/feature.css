@@ -20,6 +20,10 @@
     
   }
 
+  .article-title {
+    font-size: clamp(1.688rem, 2vw + 1rem, 2.5rem);
+  }
+
     .feature--wrapper {
       display:         flex;
       flex-flow:       column nowrap;
