@@ -1793,11 +1793,13 @@ HERO SECTION
     width: clamp(15.6rem, 100%, 82.125rem); 
     align-content: center;
   }
+
   .portfolio-content > .card-text {
-    max-height: 20rem;
+    max-height: 19.5rem;
     padding-right: 1rem;
     overflow-y: auto;
     text-wrap:balance;
+    
   }
   ::-webkit-scrollbar {
     width: 5px;
@@ -1805,12 +1807,18 @@ HERO SECTION
   }
   ::-webkit-scrollbar-track {
     background: #f1f1f1; 
-    
-}
-::-webkit-scrollbar-thumb {
+  
+  }
+  ::-webkit-scrollbar-thumb {
   background: #888; 
   border-radius: 6px; 
-}
+  }
+  .portfolio-content > .card-text {
+    scrollbar-width: thin;
+    scrollbar-color: #888 #f1f1f1;
+     
+  }
+  
   .pic__desktop {
     display: block;
     width: 70%;
